@@ -17,5 +17,8 @@
   height: 7px;
   width: 7px;
   border: 1px solid #4d79ff;
+  background-color: #4d79ff;
   border-radius: 7px;
+  position: relative;
+  top: 9px;
 }
