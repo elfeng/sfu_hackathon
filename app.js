@@ -8,7 +8,7 @@
 
 // failed drop example - entry 5
 // successful drop example - entry 15
-// failed dump example -
+// successful dump example - entry 39
 
 
 $(document).ready(() => {
@@ -25,10 +25,11 @@ $(document).ready(() => {
     var $playType = $(`<p>${data[attemptNumber][`Entry ${attemptNumber}`].style.toUpperCase()} type entry</p>
     `);
     var $success = $(`<p>Successful: ${data[attemptNumber][`Entry ${attemptNumber}`].success.toString()}</p>`)
+    var $timeInZone = $(`<p>Time in attacking zone:  ${data[attemptNumber][`Entry ${attemptNumber}`].time_in_zone}sec</p>`)
     $(".textbox").append($playType);
     $(".textbox").append($success);
+    $(".textbox").append($timeInZone)
     var coordinates = data[attemptNumber][`Entry ${attemptNumber}`]['coords'].map(xy => [xy[0]*4, xy[1]*4]);
-    console.log(coordinates)
     var origin = [-4, 4]
     var startingPos = [
       `${(coordinates[0][0] + origin[0]).toString()}px`,
