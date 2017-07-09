@@ -12,3 +12,10 @@
   position: relative;
   margin: 0 auto;
 }
+
+.player {
+  height: 7px;
+  width: 7px;
+  border: 1px solid #4d79ff;
+  border-radius: 7px;
+}

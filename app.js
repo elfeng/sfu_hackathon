@@ -6,11 +6,8 @@
 
 // sample ------ var $tweet = $("<article>").addClass("tweet");  --------
 
-require('data.json')
 
 $(document).ready(() => {
-
-  // $("button").slideUp("fast");
 
   var $rink = $("<div class='rink'></div>");
   var $blueLines = $("<div class='blueLines'></div>");
@@ -19,9 +16,3 @@ $(document).ready(() => {
   $(".entry").append($player);
   $(".entry").append($rink);
 });
-
-
-
-
-
-
