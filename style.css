@@ -1,0 +1,14 @@
+.rink {
+  height: 340px;
+  width: 800px;
+  border: 1px solid black;
+  border-radius: 112px;
+}
+
+.blueLines {
+  height: 340px;
+  width: 200px;
+  border: 1px solid red;
+  position: relative;
+  margin: 0 auto;
+}
